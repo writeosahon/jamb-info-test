@@ -7,15 +7,36 @@ function loadAds(){
 
     // config banner ad
     admob.banner.config({
-        //id: 'ca-app-pub-8042133793597643/7566158747',
+        id: 'ca-app-pub-3940256099942544/6300978111',
         isTesting: true,
         autoShow: true,
         bannerAtTop: true,
-        overlap: true
+        overlap: false
+    });
+
+    // config interstitial ad
+    admob.interstitial.config({
+        id: 'ca-app-pub-3940256099942544/1033173712',
+        isTesting: true,
+        autoShow: false
     });
 
     // create banner ad
     admob.banner.prepare().then(function(){console.log("AD LOADED")});
+
+    // create interstitial ad
+    admob.interstitial.prepare().then(function(){console.log("INTERSTITIAL AD LOADED")});
+
+    $(function(){
+        $(document).on("click", '.btn.btn-success', function(){
+            console.log("BUTTON CLICKED");
+            admob.interstitial.isReady().then(function(){
+                admob.interstitial.show();
+            }).catch();
+        });
+    });
+
+
 }
 
 document.addEventListener("deviceready", loadAds);
