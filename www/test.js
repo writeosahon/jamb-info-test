@@ -7,7 +7,7 @@ function loadAds(){
 
     // config banner ad
     admob.banner.config({
-        id: 'ca-app-pub-8042133793597643/7566158747',
+        //id: 'ca-app-pub-8042133793597643/7566158747',
         isTesting: true,
         autoShow: true,
         bannerAtTop: true,
