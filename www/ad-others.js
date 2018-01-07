@@ -3,13 +3,6 @@
  */
 
 function loadAds(){
-    console.log("FUNCTION CALLED");
-
-    document.addEventListener("backbutton", function(){
-        //window.history.back();
-        window.location.href = 'index.html';
-        console.log("BACK BUTTON CLICKED");
-    }, false);
 
     // config banner ad
     admob.banner.config({
@@ -28,14 +21,13 @@ function loadAds(){
     });
 
     // create banner ad
-    admob.banner.prepare().then(function(){console.log("AD LOADED")});
+    admob.banner.prepare().then(function(){});
 
     // create interstitial ad
-    admob.interstitial.prepare().then(function(){console.log("INTERSTITIAL AD LOADED")});
+    admob.interstitial.prepare().then(function(){});
 
     $(function(){
         $(document).on("click", '.btn.btn-success', function(){
-            console.log("BUTTON CLICKED");
             admob.interstitial.isReady().then(function(){
                 admob.interstitial.show();
             }).catch();
