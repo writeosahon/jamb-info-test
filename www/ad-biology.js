@@ -6,7 +6,8 @@ function loadAds(){
     console.log("FUNCTION CALLED");
 
     document.addEventListener("backbutton", function(){
-        window.history.back();
+        //window.history.back();
+        window.location.href = 'index.html';
         console.log("BACK BUTTON CLICKED");
     }, false);
 
