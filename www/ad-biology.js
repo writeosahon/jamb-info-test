@@ -5,6 +5,11 @@
 function loadAds(){
     console.log("FUNCTION CALLED");
 
+    document.addEventListener("backbutton", function(){
+        window.history.back();
+        console.log("BACK BUTTON CLICKED");
+    }, false);
+
     // config banner ad
     admob.banner.config({
         id: 'ca-app-pub-3940256099942544/6300978111',
@@ -35,10 +40,6 @@ function loadAds(){
             }).catch();
         });
     });
-
-    document.addEventListener("backbutton", function(){
-        window.history.back();
-    }, false);
 
 }
 
