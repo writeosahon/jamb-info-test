@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f3eec4a4-0c8c-4e25-ad0a-2022643810ba" name="Default" comment="9th commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/advert-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/advert-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
     </list>
     <ignored path="JAMB-INFO-APP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,17 +24,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="79" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
+            <state relative-caret-position="504">
+              <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="130" column="109" selection-start-line="130" selection-start-column="109" selection-end-line="130" selection-end-column="109" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
+        <entry file="file://$PROJECT_DIR$/www/chemistry.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="569">
-              <caret line="401" column="1" selection-start-line="401" selection-start-column="1" selection-end-line="401" selection-end-column="1" />
+              <caret line="91" column="33" lean-forward="true" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
+              <folding>
+                <element signature="e#8236#8258#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,13 +54,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/advert-1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+            <state relative-caret-position="119">
+              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+              <folding>
+                <element signature="n#!!block;n#loadAds#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/ad-others.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -68,7 +83,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>premi</find>
       <find>an</find>
+      <find>chemis</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,7 +100,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/www/test.js" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/ad-biology.js" />
         <option value="$PROJECT_DIR$/www/biology.html" />
         <option value="$PROJECT_DIR$/www/chemistry.html" />
@@ -99,6 +115,7 @@
         <option value="$PROJECT_DIR$/www/ad-others.js" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/advert-1.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -205,7 +222,7 @@
       <workItem from="1540833257923" duration="2219000" />
       <workItem from="1540888150761" duration="643000" />
       <workItem from="1540911756348" duration="2438000" />
-      <workItem from="1562596755873" duration="2031000" />
+      <workItem from="1562596755873" duration="6361000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1515229891714</created>
@@ -382,11 +399,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562597963018</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="9th commit">
+      <created>1562599929525</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1562599929525</updated>
+    </task>
+    <task id="LOCAL-00027" summary="9th commit">
+      <created>1562604136022</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1562604136022</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7331000" />
+    <option name="totallyTimeSpent" value="11661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -442,13 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="187" column="59" selection-start-line="184" selection-end-line="187" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/chemistry.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="187" column="59" selection-start-line="187" selection-start-column="59" selection-end-line="187" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -508,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="79" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/ad-index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -524,24 +541,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
+    <entry file="file://$PROJECT_DIR$/www/ad-others.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/chemistry1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="569">
-          <caret line="401" column="1" selection-start-line="401" selection-start-column="1" selection-end-line="401" selection-end-column="1" />
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/chemistry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="91" column="33" lean-forward="true" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
+          <folding>
+            <element signature="e#8236#8258#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/advert-1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        <state relative-caret-position="119">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!block;n#loadAds#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/ad-others.js">
+    <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state relative-caret-position="504">
+          <caret line="130" column="109" selection-start-line="130" selection-start-column="109" selection-end-line="130" selection-end-column="109" />
         </state>
       </provider>
     </entry>
