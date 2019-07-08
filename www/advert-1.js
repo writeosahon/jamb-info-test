@@ -6,7 +6,7 @@ function loadAds(){
 
     // config banner ad
     admob.banner.config({
-        id: 'ca-app-pub-6924159570556282/5102744837',
+        //id: 'ca-app-pub-6924159570556282/5102744837',
         isTesting: true,
         autoShow: true,
         bannerAtTop: true,
@@ -15,8 +15,8 @@ function loadAds(){
 
     // config interstitial ad
     admob.interstitial.config({
-        id: 'ca-app-pub-6924159570556282/7396901532',
-        isTesting: false,
+        //id: 'ca-app-pub-6924159570556282/7396901532',
+        isTesting: true,
         autoShow: false
     });
 
