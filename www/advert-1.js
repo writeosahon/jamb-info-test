@@ -7,7 +7,7 @@ function loadAds(){
     // config banner ad
     admob.banner.config({
         id: 'ca-app-pub-6924159570556282/5102744837',
-        isTesting: false,
+        isTesting: true,
         autoShow: true,
         bannerAtTop: true,
         overlap: false
