@@ -1,11 +1,11 @@
-<?xml version='1.0' encoding='utf-8' ?>
-<widget id="com.exams.jambinfo" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>JAMB info</name>
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.exams.examseriesjamb" version="1.1.15" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>JAMB QUIZ 2019</name>
     <description>
-        Jamb info is a mobile app dedicated to providing information about jamb
+        Jamb Quiz is an online test engine that aims at promoting academic excellence and performance amongst candidates preparing for Joint admissions and matriculation examinations.It provides an online exam simulation where candidates are subjected to the real examination situation.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
-        JAMB info
+        JAMB QUIZ 2019
     </author>
     <content src="index.html" />
 
@@ -13,30 +13,35 @@
     <preference name="phonegap-version" value="cli-7.1.0" />
 
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="21"/>
-    <preference name="android-targetSdkVersion" value="27"/>
+    <preference name="android-minSdkVersion" value="16"/>
+    <preference name="android-targetSdkVersion" value="28"/>
     <preference name="android-installLocation" value="auto"/>
     <preference name="Orientation" value="portrait"/>
     <preference name="AndroidLaunchMode" value="singleTop"/>
     <preference name="android-signed" value="true"/>
 
+   
+    
+
     <plugin name="cordova-plugin-device" source="npm" spec="2.0.1" />
     <plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2" />
-
-    <plugin name="cordova-plugin-file" spec="6.0.1"/>
-
-    <plugin name="cordova-plugin-inappbrowser" spec="3.0.0"/>
-
-    <plugin name="cordova-plugin-network-information" spec="2.0.1"/>
+    
+    <plugin name="cordova-plugin-file" source="npm" spec="~4.1.1" />
+    
+    <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.3.0" />
+    
+    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
   <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
-    <plugin name="cordova-plugin-admob-free" spec="0.22.0" >
-        <variable name="ADMOB_APP_ID" value="ca-app-pub-8042133793597643~8469597750"/>
-    </plugin>
+   
 
     <plugin name="cordova-plugin-whitelist" spec="1.3.3"/>
-
-
+    
+    <plugin name="cordova-plugin-uniquedeviceid" source="npm" />
+	
+     <plugin name="cordova-plugin-admob-free" spec="0.22.0" >
+        <variable name="ADMOB_APP_ID" value="ca-app-pub-6924159570556282~2591349453"/>
+    </plugin>
 
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
@@ -45,13 +50,13 @@
         <icon density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
         <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
         <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
-
-
-
+		
+        
+		
     </platform>
-
-
-
+    
+   
+    
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
