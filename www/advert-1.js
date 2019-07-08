@@ -27,7 +27,7 @@ function loadAds(){
     admob.interstitial.prepare().then(function(){});
 
     $(function(){
-        $(document).on("click", '.btn.btn-success', function(){
+        $(document).on("click", '.btn.btn-success:not(.premium)', function(){
             admob.interstitial.isReady().then(function(){
                 admob.interstitial.show();
             }).catch();
@@ -35,6 +35,10 @@ function loadAds(){
     });
 
 
+}
+
+function payPremium(){
+    location.href = "premium.html";
 }
 
 document.addEventListener("deviceready", loadAds);
