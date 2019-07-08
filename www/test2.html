@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Device Properties Example</title>
+
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        var element = document.getElementById('deviceProperties');
+        element.innerHTML = 'Device Model: '    + device.model    + '<br />' +
+                            'Device Cordova: '  + device.cordova  + '<br />' +
+                            'Device Platform: ' + device.platform + '<br />' +
+                            'Device UUID: '     + device.uuid     + '<br />' +
+                            'Device Version: '  + device.version  + '<br />';
+    }
+//alert('ok');
+//TelephonyManager tm = (TelephonyManager)getSystemService(TELEPHONY_SERVICE); 
+//String number = tm.getLine1Number();
+//alert(number);
+    </script>
+</head>
+<body>
+ <p id="deviceProperties">Loading device properties...</p>
+  
+  
+  <div class="col-sm-8 text-left"> 
+     <p align="left"><a href="index.html"><img src="homes.jpg" width="40" height="40" style="width:40px; height:40px" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="maths.html"><img src="b3.jpg" width="81" height="77"  style="width:70px; height:70px" /></a>	  </p>
+</body>
+</html>
