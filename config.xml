@@ -43,6 +43,10 @@
         <variable name="ADMOB_APP_ID" value="ca-app-pub-6924159570556282~2591349453"/>
     </plugin>
 
+    <plugin name="cordova-plugin-purchase" spec="8.1.1" >
+        <variable name="BILLING_KEY" value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAid4R+zLbK7RR0J9MPpouSnuYTzAwwPqVzwwkQLrixV8m7yQOPEwVhoRy/SqZnD3ZpDNGPIEjoMcet1QAqwUuIqfCA4eHgyRsP8xW3CnOIOLyqKsECRf+A1FmaUhIeY2FvMTrjMKvl7N3PM4ESH/BBGBO6MkLex7tvzP5KgLn2X7VcRJD2IUypeBvymPj7t/1R/AVZLrY68gpHOJ0BgQvCvMTKVpIef9svoRqUovBYFrlTsyx4TWB6jCX9VclzrioG939w7vRlrQjYxH/qvim0RUkYAH9rXefJ8+YqdWwNik62XodPNLAbZKTqLiWe0O7+ZwCShuFxKAU5iT2im3kNQIDAQAB"/>
+    </plugin>
+
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
