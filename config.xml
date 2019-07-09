@@ -37,7 +37,7 @@
 
     <plugin name="cordova-plugin-whitelist" spec="1.3.3"/>
     
-    <plugin name="cordova-plugin-uniquedeviceid" source="npm" />
+<!--    <plugin name="cordova-plugin-uniquedeviceid" source="npm" />-->
 	
      <plugin name="cordova-plugin-admob-free" spec="0.22.0" >
         <variable name="ADMOB_APP_ID" value="ca-app-pub-6924159570556282~2591349453"/>
