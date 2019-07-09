@@ -41,56 +41,52 @@ function loadAds(){
 
 function loadProducts(){
 
-    // check if the store object is ready and execute
-    store.ready(function(){
+    // register the log level for the store
+    store.verbosity = store.DEBUG;
+    console.log("STORE READY STARTING");
 
-        // register the log level for the store
-        store.verbosity = store.DEBUG;
-        console.log("STORE READY STARTING");
-
-        // REGISTER THE STORE EVENT LISTENERS
-        store.error(function(){ // error handler
-            console.log("STORE ERROR");
-            window.premiumJambQProd = null; // reset the global product object
-            // display error message to user
-            navigator.notification.alert("You cannot make purchases at this stage. Try again in a moment. \nAlso, make sure you didn't enable In-App-Purchases restrictions on your phone.", function(){}, "Product Error", "OK");
-        });
-
-        store.when("premium jamb q&a").loaded(function(product){ // listen for when product is loaded
-            console.log("STORE LOADED");
-            if(product && product.valid){ // product is loaded and valid
-                window.premiumJambQProd = product; // store the loaded product globally
-            }
-            else{ // product may not be valid
-                window.premiumJambQProd = null; // reset the global product object
-            }
-        });
-
-        store.when("premium jamb q&a").approved(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully approved
-            console.log("STORE APPROVED");
-            product.finish();
-        });
-
-        store.when("premium jamb q&a").finished(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully finished
-            console.log("STORE FINISHED");
-            // display error message to user
-            navigator.notification.alert("Thank you for purchasing '" + product.title + "'.", function(){
-                location.href = "premium.html"; // navigate to the premium page
-            }, "Product Purchased", "OK");
-        });
-
-        console.log("STORE REGISTER BEGIN");
-        // REGISTER THE PREMIUM JAMB Q&A PRODUCT WITH THE STORE OBJECT
-        store.register({
-            id: "android.test.purchased",
-            alias: "premium jamb q&a",
-            type: store.CONSUMABLE
-        });
-        console.log("STORE REGISTER ENDED");
-
-        // TRIGGER STORE REFRESH
-        store.refresh();
+    // REGISTER THE STORE EVENT LISTENERS
+    store.error(function(){ // error handler
+        console.log("STORE ERROR");
+        window.premiumJambQProd = null; // reset the global product object
+        // display error message to user
+        navigator.notification.alert("You cannot make purchases at this stage. Try again in a moment. \nAlso, make sure you didn't enable In-App-Purchases restrictions on your phone.", function(){}, "Product Error", "OK");
     });
+
+    store.when("premium jamb q&a").loaded(function(product){ // listen for when product is loaded
+        console.log("STORE LOADED");
+        if(product && product.valid){ // product is loaded and valid
+            window.premiumJambQProd = product; // store the loaded product globally
+        }
+        else{ // product may not be valid
+            window.premiumJambQProd = null; // reset the global product object
+        }
+    });
+
+    store.when("premium jamb q&a").approved(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully approved
+        console.log("STORE APPROVED");
+        product.finish();
+    });
+
+    store.when("premium jamb q&a").finished(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully finished
+        console.log("STORE FINISHED");
+        // display error message to user
+        navigator.notification.alert("Thank you for purchasing '" + product.title + "'.", function(){
+            location.href = "premium.html"; // navigate to the premium page
+        }, "Product Purchased", "OK");
+    });
+
+    console.log("STORE REGISTER BEGIN");
+    // REGISTER THE PREMIUM JAMB Q&A PRODUCT WITH THE STORE OBJECT
+    store.register({
+        id: "android.test.purchased",
+        alias: "premium jamb q&a",
+        type: store.CONSUMABLE
+    });
+    console.log("STORE REGISTER ENDED");
+
+    // TRIGGER STORE REFRESH
+    store.refresh();
 }
 
 
