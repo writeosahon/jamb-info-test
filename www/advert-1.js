@@ -2,6 +2,8 @@
  * Created by UTOPIA SOFTWARE on 06/01/2018.
  */
 
+var premiumJambQProd = null; // holds the product to be purchased
+
 function loadAds(){
 
     // config banner ad
@@ -37,8 +39,63 @@ function loadAds(){
 
 }
 
+function loadProducts(){
+
+    // check if the store object is ready and execute
+    store.ready(function(){
+
+        // register the log level for the store
+        store.verbosity = store.DEBUG;
+
+        // REGISTER THE STORE EVENT LISTENERS
+        store.error(function(){ // error handler
+            window.premiumJambQProd = null; // reset the global product object
+            // display error message to user
+            navigator.notification.alert("You cannot make purchases at this stage. Try again in a moment. \nMake sure you didn't enable In-App-Purchases restrictions on your phone.", function(){}, "Product Error", "OK");
+        });
+
+        store.when("premium jamb q&a").loaded(function(product){ // listen for when product is loaded
+            if(product && product.valid){ // product is loaded and valid
+                window.premiumJambQProd = product; // store the loaded product globally
+            }
+            else{ // product may not be valid
+                window.premiumJambQProd = null; // reset the global product object
+            }
+        });
+
+        store.when("premium jamb q&a").approved(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully approved
+            product.finish();
+        });
+
+        store.when("premium jamb q&a").finished(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully finished
+            // display error message to user
+            navigator.notification.alert("Thank you for purchasing '" + product.title + "'.", function(){
+                location.href = "premium.html"; // navigate to the premium page
+            }, "Product Purchased", "OK");
+        });
+
+        // REGISTER THE PREMIUM JAMB Q&A PRODUCT WITH THE STORE OBJECT
+        store.register({
+            id: "android.test.purchased",
+            alias: "premium jamb q&a",
+            type: store.CONSUMABLE
+        });
+
+        // TRIGGER STORE REFRESH
+        store.refresh();
+    });
+}
+
+
 function payPremium(){
-    location.href = "premium.html";
+    if(window.premiumJambQProd && !window.premiumJambQProd.owned){ // the premium jamb product has not been purchased
+        store.order(window.premiumJambQProd);
+        return; // exit method
+    }
+    if(window.premiumJambQProd && window.premiumJambQProd.owned){ // the premium jamb product has already been purchased
+        location.href = "premium.html"; // navigate to the premium page
+    }
 }
 
 document.addEventListener("deviceready", loadAds);
+document.addEventListener("deviceready", loadProducts);
