@@ -46,8 +46,8 @@ function loadProducts(){
     console.log("STORE READY STARTING");
 
     // REGISTER THE STORE EVENT LISTENERS
-    store.error(function(){ // error handler
-        console.log("STORE ERROR");
+    store.error(function(err){ // error handler
+        console.log("STORE ERROR", err);
         window.premiumJambQProd = null; // reset the global product object
         // display error message to user
         navigator.notification.alert("You cannot make purchases at this stage. Try again in a moment. \nAlso, make sure you didn't enable In-App-Purchases restrictions on your phone.", function(){}, "Product Error", "OK");
