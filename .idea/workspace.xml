@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f3eec4a4-0c8c-4e25-ad0a-2022643810ba" name="Default" comment="9th commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/advert-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/advert-1.js" afterDir="false" />
     </list>
     <ignored path="JAMB-INFO-APP.iws" />
@@ -55,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/advert-1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="94" column="105" selection-start-line="94" selection-start-column="105" selection-end-line="94" selection-end-column="105" />
+            <state relative-caret-position="187">
+              <caret line="54" column="11" lean-forward="true" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
               <folding>
                 <element signature="n#!!block;n#loadAds#0" />
               </folding>
@@ -223,7 +222,7 @@
       <workItem from="1540833257923" duration="2219000" />
       <workItem from="1540888150761" duration="643000" />
       <workItem from="1540911756348" duration="2438000" />
-      <workItem from="1562596755873" duration="17118000" />
+      <workItem from="1562596755873" duration="17230000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1515229891714</created>
@@ -442,11 +441,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562664503162</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="9th commit">
+      <created>1562680453763</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1562680453763</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22418000" />
+    <option name="totallyTimeSpent" value="22530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -610,8 +616,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/advert-1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="94" column="105" selection-start-line="94" selection-start-column="105" selection-end-line="94" selection-end-column="105" />
+        <state relative-caret-position="187">
+          <caret line="54" column="11" lean-forward="true" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
           <folding>
             <element signature="n#!!block;n#loadAds#0" />
           </folding>

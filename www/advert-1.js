@@ -51,7 +51,7 @@ function loadProducts(){
         store.error(function(){ // error handler
             window.premiumJambQProd = null; // reset the global product object
             // display error message to user
-            navigator.notification.alert("You cannot make purchases at this stage. Try again in a moment. \nMake sure you didn't enable In-App-Purchases restrictions on your phone.", function(){}, "Product Error", "OK");
+            navigator.notification.alert("You cannot make purchases at this stage. Try again in a moment. \nAlso, make sure you didn't enable In-App-Purchases restrictions on your phone.", function(){}, "Product Error", "OK");
         });
 
         store.when("premium jamb q&a").loaded(function(product){ // listen for when product is loaded
