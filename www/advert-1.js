@@ -87,7 +87,7 @@ function loadProducts(){
     console.log("STORE REGISTER ENDED");
 
     // TRIGGER STORE REFRESH
-    if(true){
+    if(navigator.connection.type !== Connection.NONE){
         store.refresh();
     }
 }
@@ -123,8 +123,8 @@ document.addEventListener("online", function(){
     admob.interstitial.prepare();
 });
 
-/*document.addEventListener("online", function(){
+document.addEventListener("online", function(){
     if(! window.premiumJambQProd || ! window.premiumJambQProd.valid){
         store.refresh();
     }
-});*/
+});
