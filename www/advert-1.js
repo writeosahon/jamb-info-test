@@ -123,8 +123,8 @@ document.addEventListener("online", function(){
     admob.interstitial.prepare();
 });
 
-document.addEventListener("online", function(){
+/*document.addEventListener("online", function(){
     if(! window.premiumJambQProd || ! window.premiumJambQProd.valid){
         store.refresh();
     }
-});
+});*/
