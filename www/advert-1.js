@@ -96,6 +96,9 @@ function loadProducts(){
 function payPremium(){
     console.log("STORE PAY PREMUIM STARTED");
     console.log("PRODUCT STARTED", window.premiumJambQProd);
+    if(! window.premiumJambQProd || ! window.premiumJambQProd.valid){
+        store.refresh();
+    }
     if(window.premiumJambQProd && ! window.premiumJambQProd.owned){ // the premium jamb product has not been purchased
         console.log("STORE ORDER STARTED");
         store.order(window.premiumJambQProd);
