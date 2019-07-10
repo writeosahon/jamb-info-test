@@ -80,7 +80,7 @@ function loadProducts(){
     console.log("STORE REGISTER BEGIN");
     // REGISTER THE PREMIUM JAMB Q&A PRODUCT WITH THE STORE OBJECT
     store.register({
-        id: "com.exams.examseriesjamb.premium.jamb.qa",
+        id: "com.exams.examseriesjamb.premium.jamb.qa1",
         alias: "premium jamb q&a",
         type: store.NON_CONSUMABLE
     });
