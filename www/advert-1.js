@@ -70,7 +70,7 @@ function loadProducts(){
 
     store.when("premium jamb q&a").finished(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully finished
         console.log("STORE FINISHED");
-        window.premiumJambQProd = product; // store the loaded product globally
+        //window.premiumJambQProd = product; // store the loaded product globally
         // display error message to user
         navigator.notification.alert("Thank you for purchasing '" + product.title + "'.", function(){
             location.href = "premium.html"; // navigate to the premium page
