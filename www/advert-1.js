@@ -70,6 +70,7 @@ function loadProducts(){
 
     store.when("premium jamb q&a").finished(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully finished
         console.log("STORE FINISHED");
+        window.premiumJambQProd = product; // store the loaded product globally
         // display error message to user
         navigator.notification.alert("Thank you for purchasing '" + product.title + "'.", function(){
             location.href = "premium.html"; // navigate to the premium page
@@ -86,21 +87,43 @@ function loadProducts(){
     console.log("STORE REGISTER ENDED");
 
     // TRIGGER STORE REFRESH
-    store.refresh();
+    if(navigator.connection.type !== Connection.NONE){
+        store.refresh();
+    }
 }
 
 
 function payPremium(){
     console.log("STORE PAY PREMUIM STARTED");
-    if(window.premiumJambQProd && !window.premiumJambQProd.owned){ // the premium jamb product has not been purchased
+    if(window.premiumJambQProd && ! window.premiumJambQProd.owned){ // the premium jamb product has not been purchased
         console.log("STORE ORDER STARTED");
         store.order(window.premiumJambQProd);
         return; // exit method
     }
     if(window.premiumJambQProd && window.premiumJambQProd.owned){ // the premium jamb product has already been purchased
         location.href = "premium.html"; // navigate to the premium page
+
+        admob.interstitial.isReady().then(function(){
+            admob.interstitial.show();
+        }).catch();
+
+        return; // exit method
     }
 }
 
 document.addEventListener("deviceready", loadAds);
 document.addEventListener("deviceready", loadProducts);
+
+document.addEventListener("online", function(){
+    admob.banner.prepare().then(function(){
+        admob.banner.show();
+    }).catch();
+
+    admob.interstitial.prepare();
+});
+
+document.addEventListener("online", function(){
+    if(! window.premiumJambQProd || ! window.premiumJambQProd.valid){
+        store.refresh();
+    }
+});
