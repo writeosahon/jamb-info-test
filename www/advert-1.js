@@ -53,7 +53,7 @@ function loadProducts(){
         navigator.notification.alert("You cannot make purchases at this stage. Try again in a moment. \nAlso, make sure you didn't enable In-App-Purchases restrictions on your phone.", function(){}, "Product Error", "OK");
     });
 
-    store.when("premium jamb q&a").loaded(function(product){ // listen for when product is loaded
+    store.when("premium jamb q&a1").loaded(function(product){ // listen for when product is loaded
         console.log("STORE LOADED");
         if(product && product.valid){ // product is loaded and valid
             window.premiumJambQProd = product; // store the loaded product globally
@@ -63,12 +63,12 @@ function loadProducts(){
         }
     });
 
-    store.when("premium jamb q&a").approved(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully approved
+    store.when("premium jamb q&a1").approved(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully approved
         console.log("STORE APPROVED");
         product.finish();
     });
 
-    store.when("premium jamb q&a").finished(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully finished
+    store.when("premium jamb q&a1").finished(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully finished
         console.log("STORE FINISHED");
         //window.premiumJambQProd = product; // store the loaded product globally
         // display error message to user
@@ -81,7 +81,7 @@ function loadProducts(){
     // REGISTER THE PREMIUM JAMB Q&A PRODUCT WITH THE STORE OBJECT
     store.register({
         id: "com.exams.examseriesjamb.premium.jamb.qa1",
-        alias: "premium jamb q&a",
+        alias: "premium jamb q&a1",
         type: store.NON_CONSUMABLE
     });
     console.log("STORE REGISTER ENDED");
@@ -95,6 +95,7 @@ function loadProducts(){
 
 function payPremium(){
     console.log("STORE PAY PREMUIM STARTED");
+    console.log("PRODUCT STARTED", window.premiumJambQProd);
     if(window.premiumJambQProd && ! window.premiumJambQProd.owned){ // the premium jamb product has not been purchased
         console.log("STORE ORDER STARTED");
         store.order(window.premiumJambQProd);
