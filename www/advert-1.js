@@ -80,14 +80,14 @@ function loadProducts(){
     console.log("STORE REGISTER BEGIN");
     // REGISTER THE PREMIUM JAMB Q&A PRODUCT WITH THE STORE OBJECT
     store.register({
-        id: "com.exams.examseriesjamb.premium.jamb.qa1",
+        id: "com.exams.examseriesjamb.premium.jamb.qa11",
         alias: "premium jamb q&a1",
         type: store.NON_CONSUMABLE
     });
     console.log("STORE REGISTER ENDED");
 
     // TRIGGER STORE REFRESH
-    if(navigator.connection.type !== Connection.NONE){
+    if(true){
         store.refresh();
     }
 }
@@ -123,8 +123,8 @@ document.addEventListener("online", function(){
     admob.interstitial.prepare();
 });
 
-document.addEventListener("online", function(){
+/*document.addEventListener("online", function(){
     if(! window.premiumJambQProd || ! window.premiumJambQProd.valid){
         store.refresh();
     }
-});
+});*/
