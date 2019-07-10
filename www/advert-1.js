@@ -82,7 +82,7 @@ function loadProducts(){
     store.register({
         id: "com.exams.examseriesjamb.premium.jamb.qa",
         alias: "premium jamb q&a",
-        type: store.CONSUMABLE
+        type: store.NON_CONSUMABLE
     });
     console.log("STORE REGISTER ENDED");
 
