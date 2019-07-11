@@ -28,13 +28,13 @@ productCallbacks.approved = function(product){ // listen for when the purchase o
 };
 
 productCallbacks.finished = function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully approved
-    if(canPurchaseToday === true){
+    /*if(canPurchaseToday === true){
         canPurchaseToday = false;
         navigator.notification.alert("Thank you for purchasing '" + product.title + "'.", function(){
 
             location.href = "premium.html"; // navigate to the premium page
         }, "Product Purchased", "OK");
-    }
+    }*/
 };
 
 function loadAds(){
