@@ -4,18 +4,17 @@
 
 var premiumJambQProd = null; // holds the product to be purchased
 
+var canPurchaseToday = false;
+
 var productCallbacks = {};
 
-productCallbacks.loaded = function(product){ // listen for when product is loaded
+productCallbacks.updated = function(product){ // listen for when product is loaded
     console.log("STORE LOADED");
     if(product && product.valid){ // product is loaded and valid
         window.premiumJambQProd = product; // store the loaded product globally
-        if(window.premiumJambQProd.owned){ // product is already owned
+        if(window.premiumJambQProd.canPurchase){ // product is NOT already owned
 
-            // unregister all listeners
-            store.off(productCallbacks.loaded);
-            store.off(productCallbacks.approved);
-            store.off(productCallbacks.finished);
+            canPurchaseToday = true;
         }
     }
     else{ // product may not be valid
@@ -29,15 +28,13 @@ productCallbacks.approved = function(product){ // listen for when the purchase o
 };
 
 productCallbacks.finished = function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully approved
-    navigator.notification.alert("Thank you for purchasing '" + product.title + "'.", function(){
+    if(canPurchaseToday === true){
+        canPurchaseToday = false;
+        navigator.notification.alert("Thank you for purchasing '" + product.title + "'.", function(){
 
-        // unregister all listeners
-        store.off(productCallbacks.loaded);
-        store.off(productCallbacks.approved);
-        store.off(productCallbacks.finished);
-
-        location.href = "premium.html"; // navigate to the premium page
-    }, "Product Purchased", "OK");
+            location.href = "premium.html"; // navigate to the premium page
+        }, "Product Purchased", "OK");
+    }
 };
 
 function loadAds(){
@@ -89,7 +86,7 @@ function loadProducts(){
         navigator.notification.alert("You cannot make purchases at this stage. Try again in a moment. \nAlso, make sure you didn't enable In-App-Purchases restrictions on your phone.", function(){}, "Product Error", "OK");
     });
 
-    store.when("premium jamb q&a1").loaded(productCallbacks.loaded);
+    store.when("premium jamb q&a1").updated(productCallbacks.updated);
 
     store.when("premium jamb q&a1").approved(productCallbacks.approved);
 
@@ -117,12 +114,12 @@ function payPremium(){
     if(! window.premiumJambQProd || ! window.premiumJambQProd.valid){
         store.refresh();
     }
-    if(window.premiumJambQProd && ! window.premiumJambQProd.owned){ // the premium jamb product has not been purchased
+    if(window.premiumJambQProd && window.premiumJambQProd.canPurchase){ // the premium jamb product has not been purchased
         console.log("STORE ORDER STARTED");
         store.order(window.premiumJambQProd);
         return; // exit method
     }
-    if(window.premiumJambQProd && window.premiumJambQProd.owned){ // the premium jamb product has already been purchased
+    if(window.premiumJambQProd && ! window.premiumJambQProd.canPurchase){ // the premium jamb product has already been purchased
         location.href = "premium.html"; // navigate to the premium page
 
         admob.interstitial.isReady().then(function(){
