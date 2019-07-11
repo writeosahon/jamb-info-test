@@ -111,15 +111,16 @@ function loadProducts(){
 function payPremium(){
     console.log("STORE PAY PREMUIM STARTED");
     console.log("PRODUCT STARTED", window.premiumJambQProd);
-    if(! window.premiumJambQProd || ! window.premiumJambQProd.valid){
+    if(! store.get("premium jamb q&a1") || ! store.get("premium jamb q&a1").valid){
         store.refresh();
     }
-    if(window.premiumJambQProd && window.premiumJambQProd.canPurchase){ // the premium jamb product has not been purchased
+    if(store.get("premium jamb q&a1") && store.get("premium jamb q&a1").canPurchase){ // the premium jamb product has not been purchased
         console.log("STORE ORDER STARTED");
         store.order(window.premiumJambQProd);
         return; // exit method
     }
-    if(window.premiumJambQProd && ! window.premiumJambQProd.canPurchase){ // the premium jamb product has already been purchased
+    if(store.get("premium jamb q&a1") && store.get("premium jamb q&a1").valid
+        && ! store.get("premium jamb q&a1").canPurchase){ // the premium jamb product has already been purchased
         location.href = "premium.html"; // navigate to the premium page
 
         admob.interstitial.isReady().then(function(){
