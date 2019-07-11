@@ -66,16 +66,16 @@ function loadProducts(){
     store.when("premium jamb q&a1").approved(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully approved
         console.log("STORE APPROVED");
         product.finish();
-    });
-
-    store.when("premium jamb q&a1").finished(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully finished
-        console.log("STORE FINISHED");
-        //window.premiumJambQProd = product; // store the loaded product globally
-        // display error message to user
+        // display success message to user
         navigator.notification.alert("Thank you for purchasing '" + product.title + "'.", function(){
             location.href = "premium.html"; // navigate to the premium page
         }, "Product Purchased", "OK");
     });
+
+    /*store.when("premium jamb q&a1").finished(function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully finished
+        console.log("STORE FINISHED");
+        //window.premiumJambQProd = product; // store the loaded product globally
+    });*/
 
     console.log("STORE REGISTER BEGIN");
     // REGISTER THE PREMIUM JAMB Q&A PRODUCT WITH THE STORE OBJECT
