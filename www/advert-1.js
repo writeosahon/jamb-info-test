@@ -116,7 +116,7 @@ function payPremium(){
     }
     if(store.get("premium jamb q&a1") && store.get("premium jamb q&a1").canPurchase){ // the premium jamb product has not been purchased
         console.log("STORE ORDER STARTED");
-        store.order(window.premiumJambQProd);
+        store.order(store.get("premium jamb q&a1"));
         return; // exit method
     }
     if(store.get("premium jamb q&a1") && store.get("premium jamb q&a1").valid
