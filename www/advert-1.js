@@ -9,7 +9,7 @@ var canPurchaseToday = false;
 var productCallbacks = {};
 
 productCallbacks.updated = function(product){ // listen for when product is loaded
-    console.log("STORE LOADED");
+
     if(product && product.valid){ // product is loaded and valid
         window.premiumJambQProd = product; // store the loaded product globally
         if(window.premiumJambQProd.canPurchase){ // product is NOT already owned
@@ -23,7 +23,7 @@ productCallbacks.updated = function(product){ // listen for when product is load
 };
 
 productCallbacks.approved = function(product){ // listen for when the purchase of the premium jamb Q&A product has been successfully approved
-    console.log("STORE APPROVED");
+
     product.finish();
 };
 
@@ -41,7 +41,7 @@ function loadAds(){
 
     // config banner ad
     admob.banner.config({
-        //id: 'ca-app-pub-6924159570556282/5102744837',
+        id: 'ca-app-pub-6924159570556282/5102744837',
         isTesting: true,
         autoShow: true,
         bannerAtTop: true,
@@ -50,7 +50,7 @@ function loadAds(){
 
     // config interstitial ad
     admob.interstitial.config({
-        //id: 'ca-app-pub-6924159570556282/7396901532',
+        id: 'ca-app-pub-6924159570556282/7396901532',
         isTesting: true,
         autoShow: false
     });
@@ -76,11 +76,9 @@ function loadProducts(){
 
     // register the log level for the store
     store.verbosity = store.DEBUG;
-    console.log("STORE READY STARTING");
 
     // REGISTER THE STORE EVENT LISTENERS
     store.error(function(err){ // error handler
-        console.log("STORE ERROR", err);
         window.premiumJambQProd = null; // reset the global product object
         // display error message to user
         navigator.notification.alert("You cannot make purchases at this stage. Try again in a moment. \nAlso, make sure you didn't enable In-App-Purchases restrictions on your phone.", function(){}, "Product Error", "OK");
@@ -92,14 +90,12 @@ function loadProducts(){
 
     store.when("premium jamb q&a1").finished(productCallbacks.finished);
 
-    console.log("STORE REGISTER BEGIN");
     // REGISTER THE PREMIUM JAMB Q&A PRODUCT WITH THE STORE OBJECT
     store.register({
         id: "com.exams.examseriesjamb.premium.jamb.qa1",
         alias: "premium jamb q&a1",
         type: store.NON_CONSUMABLE
     });
-    console.log("STORE REGISTER ENDED");
 
     // TRIGGER STORE REFRESH
     if(navigator.connection.type !== Connection.NONE){
@@ -109,13 +105,11 @@ function loadProducts(){
 
 
 function payPremium(){
-    console.log("STORE PAY PREMUIM STARTED");
-    console.log("PRODUCT STARTED", window.premiumJambQProd);
+
     if(! store.get("premium jamb q&a1") || ! store.get("premium jamb q&a1").valid){
         store.refresh();
     }
     if(store.get("premium jamb q&a1") && store.get("premium jamb q&a1").canPurchase){ // the premium jamb product has not been purchased
-        console.log("STORE ORDER STARTED");
         store.order(store.get("premium jamb q&a1"));
         return; // exit method
     }
