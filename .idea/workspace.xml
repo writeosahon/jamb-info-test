@@ -5,7 +5,7 @@
       <change afterPath="$PROJECT_DIR$/www/spectrum.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/www/spectrum.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/advert-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/advert-1.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,14 +133,7 @@
       <workItem from="1563962654064" duration="2747000" />
       <workItem from="1564054801409" duration="8170000" />
       <workItem from="1565445940221" duration="1453000" />
-      <workItem from="1566198335983" duration="950000" />
-    </task>
-    <task id="LOCAL-00013" summary="8th commit">
-      <created>1515318616770</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1515318616770</updated>
+      <workItem from="1566198335983" duration="1755000" />
     </task>
     <task id="LOCAL-00014" summary="9th commit">
       <created>1515320193092</created>
@@ -478,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563439075408</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="9th commit">
+      <created>1566200560011</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1566200560011</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
