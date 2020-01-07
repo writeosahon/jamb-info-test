@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3eec4a4-0c8c-4e25-ad0a-2022643810ba" name="Default" comment="13th commit">
+    <list default="true" id="f3eec4a4-0c8c-4e25-ad0a-2022643810ba" name="Default" comment="14th commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/my-facebook-ads.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/my-facebook-ads.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,14 +139,7 @@
       <workItem from="1565445940221" duration="1453000" />
       <workItem from="1566198335983" duration="3167000" />
       <workItem from="1566900609757" duration="188000" />
-      <workItem from="1578388769172" duration="5185000" />
-    </task>
-    <task id="LOCAL-00022" summary="9th commit">
-      <created>1562597677587</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1562597677587</updated>
+      <workItem from="1578388769172" duration="6458000" />
     </task>
     <task id="LOCAL-00023" summary="9th commit">
       <created>1562597822653</created>
@@ -482,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578397598996</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="14th commit">
+      <created>1578397627089</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1578397627089</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,16 +527,17 @@
     <MESSAGE value="11th commit" />
     <MESSAGE value="12th commit" />
     <MESSAGE value="13th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="13th commit" />
+    <MESSAGE value="14th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="14th commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="307" y="79" key="CommitChangelistDialog2" timestamp="1578397597797">
+    <state x="307" y="79" key="CommitChangelistDialog2" timestamp="1578397625802">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="307" y="79" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578397597797" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1578397600608">
+    <state x="307" y="79" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578397625802" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1578397629071">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1578397600608" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1578397629071" />
   </component>
 </project>
