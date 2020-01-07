@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3eec4a4-0c8c-4e25-ad0a-2022643810ba" name="Default" comment="9th commit">
-      <change afterPath="$PROJECT_DIR$/www/spectrum.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/spectrum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config_with_admob.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/my-facebook-ads.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/advert-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/advert-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +49,11 @@
   </component>
   <component name="ProjectId" id="1OQPtxbnduRkTOlxKriFt2VZixZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -71,22 +76,11 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\write\Documents\UtopiaSoftware\JAMB-INFO-APP\www" />
+      <recent name="C:\Users\write\Documents\UtopiaSoftware\JAMB-INFO-APP" />
       <recent name="C:\Users\DOS_ALPHA\Documents\UtopiaSoftware\JAMB-INFO-APP\plugins" />
       <recent name="C:\Users\DOS_ALPHA\Documents\UtopiaSoftware\JAMB-INFO-APP\www" />
       <recent name="C:\Users\DOS_ALPHA\Documents\UtopiaSoftware\JAMB-INFO-APP" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="js.build_tools.gulp">
@@ -111,6 +105,18 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -133,14 +139,9 @@
       <workItem from="1563962654064" duration="2747000" />
       <workItem from="1564054801409" duration="8170000" />
       <workItem from="1565445940221" duration="1453000" />
-      <workItem from="1566198335983" duration="1755000" />
-    </task>
-    <task id="LOCAL-00014" summary="9th commit">
-      <created>1515320193092</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1515320193092</updated>
+      <workItem from="1566198335983" duration="3167000" />
+      <workItem from="1566900609757" duration="188000" />
+      <workItem from="1578388769172" duration="2831000" />
     </task>
     <task id="LOCAL-00015" summary="9th commit">
       <created>1515320751031</created>
@@ -478,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566200560011</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="9th commit">
+      <created>1566204336074</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1566204336074</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
