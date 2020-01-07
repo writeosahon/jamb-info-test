@@ -13,7 +13,7 @@
     <preference name="phonegap-version" value="cli-9.0.0" />
 
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="16"/>
+    <preference name="android-minSdkVersion" value="19"/>
     <preference name="android-targetSdkVersion" value="28"/>
     <preference name="android-installLocation" value="auto"/>
     <preference name="Orientation" value="portrait"/>
