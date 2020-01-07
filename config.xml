@@ -41,7 +41,7 @@
     
 <!--    <plugin name="cordova-plugin-uniquedeviceid" source="npm" />-->
 	
-     <plugin name="plugin add cordova-plugin-facebookads" spec="4.23.2" />
+     <plugin name="cordova-plugin-facebookads" spec="4.23.2" />
 
 
     <platform name="android">
