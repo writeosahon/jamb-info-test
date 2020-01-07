@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3eec4a4-0c8c-4e25-ad0a-2022643810ba" name="Default" comment="17th commit">
+    <list default="true" id="f3eec4a4-0c8c-4e25-ad0a-2022643810ba" name="Default" comment="18th commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,14 +138,7 @@
       <workItem from="1565445940221" duration="1453000" />
       <workItem from="1566198335983" duration="3167000" />
       <workItem from="1566900609757" duration="188000" />
-      <workItem from="1578388769172" duration="7560000" />
-    </task>
-    <task id="LOCAL-00027" summary="9th commit">
-      <created>1562604136022</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1562604136022</updated>
+      <workItem from="1578388769172" duration="7854000" />
     </task>
     <task id="LOCAL-00028" summary="9th commit">
       <created>1562604742035</created>
@@ -482,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578400761091</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="18th commit">
+      <created>1578400789022</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1578400789028</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,16 +530,17 @@
     <MESSAGE value="15th commit" />
     <MESSAGE value="16th commit" />
     <MESSAGE value="17th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="17th commit" />
+    <MESSAGE value="18th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="18th commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="307" y="79" key="CommitChangelistDialog2" timestamp="1578400759906">
+    <state x="307" y="79" key="CommitChangelistDialog2" timestamp="1578400787501">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="307" y="79" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578400759906" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1578400762748">
+    <state x="307" y="79" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578400787501" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1578400790801">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1578400762748" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1578400790801" />
   </component>
 </project>
