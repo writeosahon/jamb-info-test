@@ -13,7 +13,7 @@
     <preference name="phonegap-version" value="cli-9.0.0" />
 
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="19"/>
+    <preference name="android-minSdkVersion" value="21"/>
     <preference name="android-targetSdkVersion" value="28"/>
     <preference name="android-installLocation" value="auto"/>
     <preference name="Orientation" value="portrait"/>
@@ -23,6 +23,7 @@
    
     
 
+   <!--
     <plugin name="cordova-plugin-device" source="npm" spec="2.0.1" />
     <plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2" />
@@ -35,7 +36,7 @@
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-dialogs" source="npm" spec="2.0.2" />
    
-
+-->
     <plugin name="cordova-plugin-whitelist" spec="1.3.3"/>
     
 <!--    <plugin name="cordova-plugin-uniquedeviceid" source="npm" />-->
