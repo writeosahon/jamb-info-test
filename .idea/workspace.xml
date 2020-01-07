@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3eec4a4-0c8c-4e25-ad0a-2022643810ba" name="Default" comment="16th commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/my-facebook-ads.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/my-facebook-ads.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,14 +137,7 @@
       <workItem from="1565445940221" duration="1453000" />
       <workItem from="1566198335983" duration="3167000" />
       <workItem from="1566900609757" duration="188000" />
-      <workItem from="1578388769172" duration="7499000" />
-    </task>
-    <task id="LOCAL-00025" summary="9th commit">
-      <created>1562597963018</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1562597963018</updated>
+      <workItem from="1578388769172" duration="7534000" />
     </task>
     <task id="LOCAL-00026" summary="9th commit">
       <created>1562599929525</created>
@@ -484,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578399590412</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="16th commit">
+      <created>1578400720053</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1578400720054</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,13 +531,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="16th commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="307" y="79" key="CommitChangelistDialog2" timestamp="1578399589153">
+    <state x="307" y="79" key="CommitChangelistDialog2" timestamp="1578400718826">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="307" y="79" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578399589153" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1578399592761">
+    <state x="307" y="79" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578400718826" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1578400735551">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1578399592761" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1578400735551" />
   </component>
 </project>
