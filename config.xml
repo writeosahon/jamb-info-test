@@ -41,7 +41,7 @@
     
 <!--    <plugin name="cordova-plugin-uniquedeviceid" source="npm" />-->
 	
-     <plugin name="cordova-plugin-codeplay-facebookads-free" spec="0.0.5" />
+<!--     <plugin name="cordova-plugin-codeplay-facebookads-free" spec="0.0.5" />-->
 
 
     <platform name="android">
